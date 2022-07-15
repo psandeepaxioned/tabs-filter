@@ -100,18 +100,38 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 75%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+/* Navbar Styling starts */
+nav {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+}
+.navbar ul {
+  padding: 10px 0;
+  flex-basis: 45%;
+  display: flex;
+}
+.navbar li {
+  margin: 0 4%;
+}
+.navbar a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
 
-
-
-
-
-
+/* Navbar Styling starts */
 /*=================================
   Header styling ends here
 =================================*/  
