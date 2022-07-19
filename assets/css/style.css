@@ -108,7 +108,7 @@ li {
 =================================*/
 /* Navbar Styling starts */
 nav {
-  margin: 25px 0;
+  padding: 25px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -129,9 +129,19 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
+  color: #9C9C9C;
+}
+section.navbar {
+  background-color: #1F1F1F;
+  color: #fff;
 }
 
 /* Navbar Styling starts */
+
+
+
+
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -139,13 +149,61 @@ h1 {
 /*=================================
   main styling starts here
 =================================*/
-
-
-
-
-
-
-
+.filters ul {
+  padding: 20px 0;
+}
+.filters a {
+  color: #fff;
+  padding: 9px 10px;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.filters {
+  background-color: #1F1F1F;
+}
+.filters .active {
+  background-color: orange;
+}
+.images {
+  display: block;
+}
+.image-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-container li {
+  flex-basis: 25%;
+}
+.image-container .images .hide{
+  display: none;
+}
+h3 {
+  text-transform: uppercase;
+}
+.top-footer ul {
+  padding: 25px 0 15px 0;
+  display: flex;
+}
+.top-footer ul li {
+  flex-basis: 25%;
+}
+.text-widget,.recent-posts,.popular-tags {
+  display: flex;
+  flex-direction: column;
+}
+.text-widget li {
+  font-size: 10px;
+  padding: 10px 0;
+}
+.recent-posts li {
+  font-size: 10px;
+  padding: 10px 0;
+}
+ul.popular-tags a {
+  font-size: 10px;
+  padding: 5px 3%;
+  background-color: lightblue;
+}
 
 /*=================================
   main styling ends here
@@ -154,14 +212,92 @@ h1 {
 /*=================================
   footer styling starts here
 =================================*/ 
+.bottom-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-footer p {
+  font-size: 12px;
+}
+.bottom-footer a {
+  color:black;
+  text-indent: -9999px;
+}
 
 
-
-
-
-
-
- /*=================================
+.google a::before {
+  padding: 20%;
+  background: aquamarine;
+  border-radius: 50%;
+  content: '\f0d5';
+  font-family: "fontAwesome";
+  font-size: 15px;
+  text-indent: 0%;
+  float: right;
+  color: #000;
+}
+.twitter a::before {
+  padding: 20%;
+  background: aquamarine;
+  border-radius: 50%;
+  content: '\f099';
+  font-family: "fontAwesome";
+  font-size: 15px;
+  text-indent: 0%;
+  float: right;
+  color: #000;
+}
+.pinterest a::before {
+  padding: 20%;
+  background: aquamarine;
+  border-radius: 50%;
+  content: '\f231';
+  font-family: "fontAwesome";
+  font-size: 15px;
+  text-indent: 0%;
+  float: right;
+  color: #000;
+}
+.ballon a::before {
+  padding: 20%;
+  background: aquamarine;
+  border-radius: 50%;
+  content: '\f05e';
+  font-family: "fontAwesome";
+  font-size: 15px;
+  text-indent: 0%;
+  float: right;
+  color: #000;
+}
+.linkedin a::before {
+  padding: 20%;
+  background: aquamarine;
+  border-radius: 50%;
+  content: '\f0e1';
+  font-family: "fontAwesome";
+  font-size: 15px;
+  text-indent: 0%;
+  float: right;
+  color: #000;
+}
+.facebook a::before {
+  padding: 20%;
+  background: aquamarine;
+  border-radius: 50%;
+  content: '\f09a';
+  font-family: "fontAwesome";
+  font-size: 15px;
+  text-indent: 0%;
+  float: right;
+  color: #000;
+}
+.bottom-footer ul {
+  flex-basis: 22%;
+}
+.bottom-footer li {
+  margin: 0 4%;
+}
+/*=================================
   footer styling ends here
 =================================*/ 
 
