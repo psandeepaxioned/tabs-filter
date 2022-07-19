@@ -106,42 +106,48 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+body {  background-color: #1F1F1F;  }
+
 /* Navbar Styling starts */
+
 nav {
   padding: 25px 0;
+  border-bottom: 1px solid #292929;
   display: flex;
   justify-content: space-between;
 }
+
 h1 {
-  text-transform: uppercase;
   font-size: 32px;
   font-weight: 600;
+  text-transform: uppercase;
 }
+
 .navbar ul {
-  padding: 10px 0;
-  flex-basis: 45%;
   display: flex;
+  flex-basis: 45%;
 }
+
+ nav li.active {  border-bottom: 3px solid #8fd0a7; }
+
 .navbar li {
+  padding: 12px 0;
   margin: 0 4%;
 }
+
 .navbar a {
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: #8fd0a7;
   font-size: 11px;
-  color: #9C9C9C;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
+
 section.navbar {
   background-color: #1F1F1F;
   color: #fff;
 }
 
 /* Navbar Styling starts */
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -149,61 +155,33 @@ section.navbar {
 /*=================================
   main styling starts here
 =================================*/
-.filters ul {
-  padding: 20px 0;
-}
+.filters ul {  padding: 20px 0; }
+
 .filters a {
-  color: #fff;
-  padding: 9px 10px;
+  padding: 7px 10px;
+  color: #8fd0a7;
   font-size: 10px;
   text-transform: capitalize;
 }
-.filters {
-  background-color: #1F1F1F;
+
+.filters {  background-color: #1F1F1F;  }
+
+.filters .active a {
+  background-color: #8fd0a7;
+  color: #fff;
 }
-.filters .active {
-  background-color: orange;
-}
-.images {
-  display: block;
-}
+
+.images {  display: block;  }
+
 .image-container ul {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #292929;
   display: flex;
   flex-wrap: wrap;
 }
-.image-container li {
-  flex-basis: 25%;
-}
-.image-container .images .hide{
-  display: none;
-}
-h3 {
-  text-transform: uppercase;
-}
-.top-footer ul {
-  padding: 25px 0 15px 0;
-  display: flex;
-}
-.top-footer ul li {
-  flex-basis: 25%;
-}
-.text-widget,.recent-posts,.popular-tags {
-  display: flex;
-  flex-direction: column;
-}
-.text-widget li {
-  font-size: 10px;
-  padding: 10px 0;
-}
-.recent-posts li {
-  font-size: 10px;
-  padding: 10px 0;
-}
-ul.popular-tags a {
-  font-size: 10px;
-  padding: 5px 3%;
-  background-color: lightblue;
-}
+
+.image-container li {  flex-basis: 25%; }
+.image-container .hide{  display: none; }
 
 /*=================================
   main styling ends here
@@ -212,91 +190,163 @@ ul.popular-tags a {
 /*=================================
   footer styling starts here
 =================================*/ 
+/* top footer styling */
+
+h3 {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.top-footer ul {
+  padding: 25px 0 0 0;
+  display: flex;
+  color: #8fd0a7;
+}
+
+ul.popular-tags li {  margin: 5px 6%; }
+
+.text-widget,.recent-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-tags,.flickr-gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-widget li {
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+.recent-posts li {
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+.recent-posts li:nth-child(1){  border-bottom: 1px solid #292929; }
+.recent-posts li:nth-child(2){  border-bottom: 1px solid #292929; }
+.recent-posts li:nth-child(3){  border-bottom: 1px solid #292929; }
+
+ul.popular-tags a {
+  padding: 7px 21%;
+  background-color: #8fd0a7;
+  color: #fff;
+  font-size: 10px;
+}
+
+.list-1, .list-2, .list-3, .list-4 {
+  padding: 0 1%;
+  flex-basis: 25%;
+}
+
+ul.flickr-gallery li {  flex-basis: 20%;  }
+
+ul.flickr-gallery li {
+  padding: 2% 4% 2% 0;
+  flex-basis: 20%;
+}
+
+.top-footer .wrapper {  border-bottom: 1px solid #292929; }
+
+/* top footer styling ends */
+
+/* bottom footer styling */
+
+.bottom-footer {  padding: 15px 0;  }
+
 .bottom-footer .wrapper {
   display: flex;
   justify-content: space-between;
 }
+
 .bottom-footer p {
+  color: #8fd0a7;
   font-size: 12px;
 }
+
 .bottom-footer a {
   color:black;
   text-indent: -9999px;
 }
 
-
 .google a::before {
-  padding: 20%;
-  background: aquamarine;
+  padding: 30%;
+  background: #fff;
   border-radius: 50%;
   content: '\f0d5';
   font-family: "fontAwesome";
-  font-size: 15px;
+  font-size: 12px;
   text-indent: 0%;
   float: right;
-  color: #000;
+  color: #7d7d7d;
 }
+
 .twitter a::before {
-  padding: 20%;
-  background: aquamarine;
+  padding: 30%;
+  background: #fff;
   border-radius: 50%;
   content: '\f099';
   font-family: "fontAwesome";
   font-size: 15px;
   text-indent: 0%;
   float: right;
-  color: #000;
+  color: #7d7d7d;
 }
+
 .pinterest a::before {
-  padding: 20%;
-  background: aquamarine;
+  padding: 4px 40%;
+  background: #fff;
   border-radius: 50%;
   content: '\f231';
   font-family: "fontAwesome";
   font-size: 15px;
   text-indent: 0%;
   float: right;
-  color: #000;
+  color: #7d7d7d;
 }
+
 .ballon a::before {
-  padding: 20%;
-  background: aquamarine;
+  padding: 30%;
+  background: #fff;
   border-radius: 50%;
   content: '\f05e';
   font-family: "fontAwesome";
   font-size: 15px;
   text-indent: 0%;
   float: right;
-  color: #000;
+  color: #7d7d7d;
 }
+
 .linkedin a::before {
-  padding: 20%;
-  background: aquamarine;
+  padding: 5px 45%;
+  background: #fff;
   border-radius: 50%;
   content: '\f0e1';
   font-family: "fontAwesome";
   font-size: 15px;
   text-indent: 0%;
   float: right;
-  color: #000;
+  color: #7d7d7d;
 }
+
 .facebook a::before {
-  padding: 20%;
-  background: aquamarine;
+  padding: 4px 70%;
+  background: #fff;
   border-radius: 50%;
   content: '\f09a';
   font-family: "fontAwesome";
   font-size: 15px;
   text-indent: 0%;
   float: right;
-  color: #000;
+  color: #7d7d7d;
 }
-.bottom-footer ul {
-  flex-basis: 22%;
-}
-.bottom-footer li {
-  margin: 0 4%;
-}
+
+.bottom-footer ul {  flex-basis: 22%; }
+.bottom-footer li {  margin: 0 3%;  }
+/* bottom footer styling ends */
 /*=================================
   footer styling ends here
 =================================*/ 
