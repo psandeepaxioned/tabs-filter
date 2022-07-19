@@ -112,6 +112,7 @@ body {  background-color: #1F1F1F;  }
 
 nav {
   padding: 25px 0;
+  margin-top: 15px;
   border-bottom: 1px solid #292929;
   display: flex;
   justify-content: space-between;
@@ -159,11 +160,11 @@ section.navbar {
 
 .filters a {
   padding: 7px 10px;
-  color: #8fd0a7;
+  color: #fff;
   font-size: 10px;
   text-transform: capitalize;
 }
-
+.filters li {  margin: 0 0.5% 0 0;  }
 .filters {  background-color: #1F1F1F;  }
 
 .filters .active a {
@@ -194,17 +195,19 @@ section.navbar {
 
 h3 {
   color: #fff;
+  font-size: 14px;
   font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .top-footer ul {
   padding: 25px 0 0 0;
   display: flex;
-  color: #8fd0a7;
+  color: #7a7a7a;
 }
 
-ul.popular-tags li {  margin: 5px 6%; }
+ul.popular-tags li {  margin: 0 14% 10px 0; }
 
 .text-widget,.recent-posts {
   display: flex;
@@ -224,6 +227,7 @@ ul.popular-tags li {  margin: 5px 6%; }
 .recent-posts li {
   padding: 10px 0;
   font-size: 10px;
+  text-transform: capitalize;
 }
 
 .recent-posts li:nth-child(1){  border-bottom: 1px solid #292929; }
@@ -238,8 +242,12 @@ ul.popular-tags a {
 }
 
 .list-1, .list-2, .list-3, .list-4 {
-  padding: 0 1%;
+  padding: 5px 1%;
   flex-basis: 25%;
+}
+
+ul.text-widget,ul.recent-posts,ul.popular-tags,ul.flickr-gallery{
+  padding: 5px 0;
 }
 
 ul.flickr-gallery li {  flex-basis: 20%;  }
@@ -263,8 +271,8 @@ ul.flickr-gallery li {
 }
 
 .bottom-footer p {
-  color: #8fd0a7;
-  font-size: 12px;
+  color: #7a7a7a;
+  font-size: 10px;
 }
 
 .bottom-footer a {
@@ -346,6 +354,7 @@ ul.flickr-gallery li {
 
 .bottom-footer ul {  flex-basis: 22%; }
 .bottom-footer li {  margin: 0 3%;  }
+
 /* bottom footer styling ends */
 /*=================================
   footer styling ends here
