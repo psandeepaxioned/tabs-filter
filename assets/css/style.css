@@ -187,6 +187,22 @@ nav a {
 .image-container li {  flex-basis: 25%; }
 .image-container .hide{  display: none; }
 
+.modal-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.3);
+}
+.modal {
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
 /*=================================
   main styling ends here
 =================================*/
