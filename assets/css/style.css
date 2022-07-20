@@ -191,12 +191,19 @@ nav a {
 
 .modal-background {
   display: none;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   z-index: 1;
   background-color: rgba(0,0,0,0.3);
 }
+
+.modal-background .active{
+  display: block;
+}
+
 .modal {
   width: 70vw;
   height: 70vh;
@@ -205,6 +212,19 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
+}
+
+.modal-background::before{
+  content: '\f00d';
+  padding: 1%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  font-family: "fontAwesome";
+  font-size: 30px;
+  cursor: pointer;
 }
 /*=================================
   main styling ends here
