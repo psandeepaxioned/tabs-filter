@@ -7,6 +7,9 @@
 */
 const types = document.querySelectorAll(".types");
 const images = document.querySelectorAll(".images");
+const imgSrc = document.querySelectorAll(".images img");
+const modalBg = document.querySelector('.modal-background');
+const modalImg = document.querySelector('.modal img');
 
 types.forEach(function (type) {
   type.addEventListener("click", function () {
@@ -30,4 +33,13 @@ types.forEach(function (type) {
       }
     })
   });
+})
+
+imgSrc.forEach((item) => {
+  item.addEventListener('click',() => { 
+    modalBg.style.display = 'block';
+    const source = item.getAttribute('src');
+    console.log(source);
+    modalImg.setAttribute('src',source)
+  })
 })
