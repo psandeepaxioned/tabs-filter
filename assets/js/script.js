@@ -37,7 +37,7 @@ types.forEach(function (type) {
 
 imgSrc.forEach((item) => {
   item.addEventListener('click',() => { 
-    modalBg.style.display = 'block';
+    modalBg.classList.add('show');
     const source = item.getAttribute('src');
     console.log(source);
     modalImg.setAttribute('src',source)
