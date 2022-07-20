@@ -119,34 +119,31 @@ nav {
 }
 
 h1 {
+  color: #fff;
   font-size: 32px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.navbar ul {
+nav ul {
   display: flex;
   flex-basis: 45%;
 }
 
- nav li.active {  border-bottom: 3px solid #8fd0a7; }
+nav li.active {  border-bottom: 3px solid #8fd0a7; }
 
-.navbar li {
+nav li {
   padding: 12px 0;
   margin: 0 4%;
 }
 
-.navbar a {
+nav a {
   color: #8fd0a7;
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-section.navbar {
-  background-color: #1F1F1F;
-  color: #fff;
-}
 
 /* Navbar Styling starts */
 /*=================================
