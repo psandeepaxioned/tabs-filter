@@ -119,34 +119,31 @@ nav {
 }
 
 h1 {
+  color: #fff;
   font-size: 32px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.navbar ul {
+nav ul {
   display: flex;
   flex-basis: 45%;
 }
 
- nav li.active {  border-bottom: 3px solid #8fd0a7; }
+nav li.active {  border-bottom: 3px solid #8fd0a7; }
 
-.navbar li {
+nav li {
   padding: 12px 0;
   margin: 0 4%;
 }
 
-.navbar a {
+nav a {
   color: #8fd0a7;
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-section.navbar {
-  background-color: #1F1F1F;
-  color: #fff;
-}
 
 /* Navbar Styling starts */
 /*=================================
@@ -164,6 +161,12 @@ section.navbar {
   font-size: 10px;
   text-transform: capitalize;
 }
+
+.filters li:not(.active) a:hover {
+  background-color: #8fd0a7;
+  text-decoration: underline;
+}
+
 .filters li {  margin: 0 0.5% 0 0;  }
 .filters {  background-color: #1F1F1F;  }
 
@@ -184,6 +187,25 @@ section.navbar {
 .image-container li {  flex-basis: 25%; }
 .image-container .hide{  display: none; }
 
+/* modal styling */
+
+.modal-background {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.3);
+}
+.modal {
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -276,7 +298,7 @@ ul.flickr-gallery li {
 }
 
 .bottom-footer a {
-  color:black;
+  color:#000;
   text-indent: -9999px;
 }
 
