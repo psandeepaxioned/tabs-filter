@@ -164,6 +164,12 @@ section.navbar {
   font-size: 10px;
   text-transform: capitalize;
 }
+
+.filters li:not(.active) a:hover {
+  background-color: red;
+  text-decoration: underline;
+}
+
 .filters li {  margin: 0 0.5% 0 0;  }
 .filters {  background-color: #1F1F1F;  }
 
