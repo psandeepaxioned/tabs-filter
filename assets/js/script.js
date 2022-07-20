@@ -39,7 +39,18 @@ imgSrc.forEach((item) => {
   item.addEventListener('click',() => { 
     modalBg.classList.add('show');
     const source = item.getAttribute('src');
-    console.log(source);
     modalImg.setAttribute('src',source)
+
+    modalBg.addEventListener('click',(e)=>{
+      if(e.target == e.currentTarget){
+        modalBg.classList.remove('show');
+      }
+    })
+    window.addEventListener('keydown',(e)=>{
+      if(e.keyCode == 27){
+        modalBg.classList.remove('show');
+      }
+    })
+
   })
 })
