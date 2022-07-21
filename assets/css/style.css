@@ -226,6 +226,15 @@ nav a {
   font-size: 30px;
   cursor: pointer;
 }
+
+.modal figure {
+  height: 100%;
+}
+
+.modal img {
+  object-fit: cover;
+}
+
 /*=================================
   main styling ends here
 =================================*/
